@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    <title>Save The World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">World</a>
+            <div class="toggle "></div>
+        </header>
+        <img src="images/bg.jpg" class="bg">
+        <img src="images/bird.png" class="bird">
+        <div class="content">
+            <h2>We can save The<br><span>Earth</span></h2>
+            <p>Ipsum id esse minim irure reprehenderit occaecat nisi irure. Amet ullamco ea Lorem in. Aliqua proident adipisicing nostrud proident cupidatat officia.. Enim magna occaecat do occaecat esse sit eiusmod ea cupidatat duis tempor.</p>
+            <a href="#">Join Us</a>
+        </div>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="images/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/instagram.png"></a>
+            </li>
+        </ul>
+        <div class="textBlocks">
+            <div class="block">
+                <h3>Defenders of Earth</h3>
+                <p>Proident et sit velit et irure aliqua elit laborum do consequat occaecat labore sit sunt.</p>
+            </div>
+            <div class="block">
+                <h3>How to save </h3>
+                <p>Ea sunt irure mollit laborum labore adipisicing reprehenderit ipsum pariatur id.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("mousemove", (e) => {
+            const bg = document.querySelector('.bg');
+            const bird = document.querySelector('.bird');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX / 100 + '%';
+            bg.style.heigth = 100 + e.pageX / 100 + '%';
+
+            bird.style.right = 100 + e.pageX / 50 + 'px';
+
+            content.style.left = 100 + e.pageX / 50 + 'px';
+
+        })
+    </script>
+</body>
+
+</html>
